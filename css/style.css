@@ -1,0 +1,27 @@
+:root {
+    --size: 10;
+    margin: 20px;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#container {
+    background: black;
+    display: inline-block;
+    border: 2px solid black;
+  }
+#grid {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(var(--size), 1fr);
+    grid-template-rows: repeat(var(--size), 1fr);
+    gap: 1px;
+}
+.cell {
+    background-color: white;
+}
