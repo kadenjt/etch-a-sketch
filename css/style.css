@@ -1,6 +1,6 @@
 :root {
     --size: 10;
-    margin: 20px;
+    margin-top: 20px;
 }
 
 .parent {
@@ -14,14 +14,27 @@
     display: inline-block;
     border: 2px solid black;
   }
-#grid {
-    width: 500px;
-    height: 500px;
-    display: grid;
-    grid-template-columns: repeat(var(--size), 1fr);
-    grid-template-rows: repeat(var(--size), 1fr);
-    gap: 1px;
-}
+  @media (min-width: 550px) { 
+    #grid {
+        width: 500px;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(var(--size), 1fr);
+        grid-template-rows: repeat(var(--size), 1fr);
+        gap: 1px;
+    }
+ }
+@media (max-width: 550px) { 
+    #grid {
+        width: 250px;
+        height: 250px;
+        display: grid;
+        grid-template-columns: repeat(var(--size), 1fr);
+        grid-template-rows: repeat(var(--size), 1fr);
+        gap: 1px;
+    }
+ }
+
 .cell {
     background-color: white;
 }
