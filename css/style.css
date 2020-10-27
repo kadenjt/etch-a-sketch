@@ -1,13 +1,12 @@
 :root {
     --size: 10;
-    margin-top: 20px;
 }
 
 .parent {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 7px;
+    padding-top: 5px;
 }
 
 #container {
