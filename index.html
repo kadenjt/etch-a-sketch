@@ -15,10 +15,16 @@
     </div>
   <div class="parent">
       <form>
-          <label for="gridSize">Grid Size (1-50):</label>
+          <label for="gridSize">Grid Size (1-75):</label>
           <input type="text" id="gridSize">
-          <input type="button" value="Submit" onclick="createBoxes(gridSize.value)">
+          <input type="button" value="Update" onclick="createBoxes(gridSize.value)">
         </form>
+    </div>
+    <div class="parent">
+      <input type="button" value="Black" onclick="setColor('black')">
+      <input type="button" value="Rainbow" onclick="setColor('rainbow')">
+      <input type="button" value="Shading" onclick="setColor('shade')">
+      <input type="button" value="Eraser" onclick="setColor('white')">
     </div>
 </div>
   <script src="js/etchsketch.js"></script>
